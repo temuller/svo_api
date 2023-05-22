@@ -29,6 +29,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=requirements,
-    #package_data={"wiserep_api": ["static/*"]},
+    # package_data={"wiserep_api": ["static/*"]},
     include_package_data=True,
 )
