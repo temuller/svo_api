@@ -4,7 +4,9 @@ API to download [Spanish Virtual Observatory](http://svo2.cab.inta-csic.es/theor
 [![repo](https://img.shields.io/badge/GitHub-temuller%2Fsvo_api-blue.svg?style=flat)](https://github.com/temuller/svo_api)
 [![license](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/temuller/svo_api/blob/master/LICENSE)
 ![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)
-[![PyPI](https://img.shields.io/pypi/v/wiserep_api?label=PyPI&logo=pypi&logoColor=white)](https://pypi.org/project/svo_api/)
+[![PyPI](https://img.shields.io/pypi/v/svo_api?label=PyPI&logo=pypi&logoColor=white)](https://pypi.org/project/svo_api/)
+[![DOI](https://zenodo.org/badge/643973679.svg)](https://zenodo.org/badge/latestdoi/643973679)
+
 
 ## Installation
 
@@ -46,5 +48,14 @@ To contribute, either open an issue or send a pull request (prefered option). Yo
 If you make use of this code, please cite it:
 
 ```code
-To be added
+@software{tomas_e_muller_bravo_2023_7957749,
+  author       = {Tomás E. Müller Bravo},
+  title        = {temuller/svo\_api: First Release (for zenodo)!},
+  month        = may,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v0.1.0-zenodo},
+  doi          = {10.5281/zenodo.7957749},
+  url          = {https://doi.org/10.5281/zenodo.7957749}
+}
 ```
