@@ -72,10 +72,20 @@ def get_filters_sets(facility):
     # get list of filters sets
     filters_sets = []
     filters_split = response.text.split(f"gname={facility}&gname2=")[1:]
+    # for facilities with multiple filter sets
     for line in filters_split:
         if len(line.split("&asttype=")) > 1:
             filter_set = line.split("&asttype=")[0]
-            filters_sets.append(filter_set)
+            if filter_set not in filters_sets:
+                filters_sets.append(filter_set)
+    
+    # for facilities with single filter sets
+    if len(filters_sets) == 0:
+        for line in filters_split:
+            if len(line.split("#")) > 1:
+                filter_set = line.split("#")[0]
+                if filter_set not in filters_sets:
+                    filters_sets.append(filter_set)
 
     if len(filters_sets) == 0:
         filters_sets = [facility]
